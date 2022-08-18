@@ -38,10 +38,10 @@ jobs:
             all_but_latest: true
             access_token: ${{ secrets.GH_TOKEN }}
 #############################################################################################
-       - name: Sleep for 5 minutes to kill previous contianer
+       #- name: Sleep for 5 minutes to kill previous contianer
          #run: sleep 5m
-         run: sleep 30s
-         shell: bash
+         #run: sleep 30s
+         #shell: bash
 #############################################################################################
        - name: Deploying and Running Rclone Gui
          timeout-minutes: 310
